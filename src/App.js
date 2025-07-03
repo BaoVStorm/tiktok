@@ -7,6 +7,7 @@ import Learn_UseLayoutEffect from './learn-F8/useLayoutEffect.js'
 import Learn_UseRef from './learn-F8/useRef.js'
 import Learn_UseCallback from './learn-F8/useCallback.js'
 import Learn_UseMemo from './learn-F8/useMemo.js'
+import Learn_UseReducer from './learn-F8/useReducer.js'
 
 import Learn_Memo from './learn-F8/memo.js'
 
@@ -66,7 +67,10 @@ function App() {
 // export default Learn_UseCallback;
 
 // // useMemo
-export default Learn_UseMemo;
+// export default Learn_UseMemo;
+
+// // useReducer
+export default Learn_UseReducer;
 
 // // memo
 // export default Learn_Memo;
