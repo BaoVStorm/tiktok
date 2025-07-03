@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useDebugValue, useEffect, useState } from "react";
 // dùng khi muốn thực hiện "Side effects" (khi có tác động -> dữ liệu chương trình thay đổi)
 
 
@@ -326,9 +326,61 @@ function Avatar() {
     )
 }
 
+// ======================== 38. ChatApp
+const lessions = [
+    {
+        id: 1,
+        name: 'Học JavaScript'
+    }, {
+        id: 2,
+        name: 'Học python'
+    }, {
+        id: 3,
+        name: 'Học C++'
+    }
+];
+
+
+function ChatApp() {
+    const [lessionId, setLessionId] = useState();
+
+    useEffect(() => {
+        const handleEvent = ({detail}) => {
+            console.log(detail);
+        };
+
+        window.addEventListener(`lesson_${lessionId}`, handleEvent);
+
+        return () => {
+            window.removeEventListener(`lesson_${lessionId}`, handleEvent);
+        }
+    }, [lessionId]);
+
+    return (
+        <div>
+            <ul>
+                {
+                    lessions.map(les => (
+                        <li
+                            key={les.id}
+                            style={{
+                                color: les.id === lessionId && 'red'
+                            }}
+                            onClick={()=>setLessionId(les.id)}
+                        >
+                        {les.name}
+                        </li>
+                    ))
+                }
+            </ul>
+        </div>
+    );
+}
+
 // export default Content;
 // export default Content2;
 // export default Content3;
 // export default ScrollPage_Button;
 // export default TimeCountDown;
-export default Avatar;
+// export default Avatar;
+export default ChatApp;
