@@ -1,5 +1,5 @@
 import clsx from "clsx";
-import styles from './multiClass/multiClass.module.css'
+import styles from './multiClass/multiClass.module.scss'
 
 // classnames
 // clsx
