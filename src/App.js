@@ -8,7 +8,14 @@ import Learn_UseRef from './learn-F8/useRef.js'
 import Learn_UseCallback from './learn-F8/useCallback.js'
 import Learn_UseMemo from './learn-F8/useMemo.js'
 import Learn_UseReducer from './learn-F8/useReducer.js'
+import Learn_UseContext from './learn-F8/useContext.js'
+  import {ThemeProvider } from './learn-F8/useContext/ThemeContext.js'; 
 
+import Learn_UseContext_Reducer from './learn-F8/useContext_useReducer.js'
+  import  {Provider_UseContext_Reducer} from './learn-F8/useContext_useReducer/index.js'
+
+
+  
 import Learn_Memo from './learn-F8/memo.js'
 
 // for useEffect - 38
@@ -70,7 +77,28 @@ function App() {
 // export default Learn_UseMemo;
 
 // // useReducer
-export default Learn_UseReducer;
+// export default Learn_UseReducer;
+
+// // useContext
+// const out = () => {
+//   return (
+//     <ThemeProvider>
+//       <Learn_UseContext/>
+//     </ThemeProvider>
+//   )
+// }
+// export default out;
+
+// // useContext_useReducer
+const out2 = () => {
+  return (
+    <Provider_UseContext_Reducer>
+      <Learn_UseContext_Reducer/>
+    </Provider_UseContext_Reducer>
+  )
+}
+export default out2;
+
 
 // // memo
 // export default Learn_Memo;
