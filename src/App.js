@@ -14,8 +14,8 @@ import Learn_UseContext from './learn-F8/useContext.js'
 import Learn_UseContext_Reducer from './learn-F8/useContext_useReducer.js'
   import  {Provider_UseContext_Reducer} from './learn-F8/useContext_useReducer/index.js'
 
+import Learn_UseImperativeHandle from './learn-F8/useImperativeHandle.js'
 
-  
 import Learn_Memo from './learn-F8/memo.js'
 
 // for useEffect - 38
@@ -90,14 +90,17 @@ function App() {
 // export default out;
 
 // // useContext_useReducer
-const out2 = () => {
-  return (
-    <Provider_UseContext_Reducer>
-      <Learn_UseContext_Reducer/>
-    </Provider_UseContext_Reducer>
-  )
-}
-export default out2;
+// const out2 = () => {
+//   return (
+//     <Provider_UseContext_Reducer>
+//       <Learn_UseContext_Reducer/>
+//     </Provider_UseContext_Reducer>
+//   )
+// }
+// export default out2;
+
+// // useImperativeHandle
+export default Learn_UseImperativeHandle;
 
 
 // // memo
