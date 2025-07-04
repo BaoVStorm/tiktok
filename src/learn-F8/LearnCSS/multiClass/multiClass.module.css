@@ -1,0 +1,20 @@
+.btn {
+    color: rgb(0, 255, 255);
+    padding: 10px;
+}
+
+.active {
+    background-color: #1115ff;
+}
+
+.primary {
+    background-color: blueviolet;
+}
+
+.danger {
+    background-color: rgb(224, 4, 59);
+}
+
+.normal {
+    background-color: #333;
+}

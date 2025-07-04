@@ -16,7 +16,14 @@ import Learn_UseContext_Reducer from './learn-F8/useContext_useReducer.js'
 
 import Learn_UseImperativeHandle from './learn-F8/useImperativeHandle.js'
 
+// Memo
 import Learn_Memo from './learn-F8/memo.js'
+
+// Css
+import Learn_CSS from './learn-F8/LearnCSS/CSS.js';
+import Learn_CSSModule from './learn-F8/LearnCSS/CssModule.js';
+import Learn_CSSMultiClass from './learn-F8/LearnCSS/multiClass.js';
+
 
 // for useEffect - 38
 function emitComment(id) {
@@ -100,8 +107,25 @@ function App() {
 // export default out2;
 
 // // useImperativeHandle
-export default Learn_UseImperativeHandle;
+// export default Learn_UseImperativeHandle;
 
-
-// // memo
+// // --------------- memo
 // export default Learn_Memo;
+
+// // --------------- CSS
+// export default Learn_CSS;
+
+// // CSS Module
+// export default Learn_CSSModule;
+
+// // CSS MultiClass
+const out3 = () => {
+  return (
+    <>
+      <Learn_CSSMultiClass primary/>
+      <Learn_CSSMultiClass danger/>
+      <Learn_CSSMultiClass normal/>
+    </>
+  )
+}
+export default out3;
